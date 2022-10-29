@@ -1,0 +1,16 @@
+{
+  "name": "chat-websocket",
+  "version": "1.0.0",
+  "description": "chat app built using websocket",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "ashutosh2706 (https://github.com/ashutosh2706)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.3"
+  }
+}

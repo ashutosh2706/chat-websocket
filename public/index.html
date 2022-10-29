@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ChatApp</title>
+</head>
+<body>
+    <h1 class="tit">HI Chat</h1>
+    <div class="main">
+        <div class="name">
+            <span>@</span>
+            <input type="text" id="client-name" class="client-name" value="user" maxlength="20"/>
+
+        </div>
+
+        <ul class="message-cont" id="message-cont">
+            <li class="message-left">
+                <p class="message">
+                    Hi
+                    <span>
+                        <!-- Send By -->
+                    </span>
+                </p>
+            </li>
+
+            <li class="message-right">
+                <p class="message">
+                    Hello
+                    <span>
+                        <!-- Send By -->
+                    </span>
+                </p>
+            </li>
+
+            <li class="feedback">
+                <p class="feed" id="feed">
+                    <!-- Someone typing... -->
+                </p>
+            </li>
+
+        </ul>
+
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+            <div class="divider"></div>
+            <button type="submit" class="send">SEND</button>
+            <span></span>
+        </form>
+    </div>
+
+    <h3 class="total" id="total"></h3>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
